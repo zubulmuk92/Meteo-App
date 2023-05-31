@@ -5,7 +5,7 @@ import WeatherCard from './WeatherCard';
 const Weather = ({ defaultVille }) => {
     const [weatherData, setWeatherData] = useState(null);
     const [city, setCity] = useState(defaultVille || '');
-    const apiKey = 'API_KEY';
+    const apiKey = "3203acfa93c14eb0bb895032233005";
 
     const body = document.querySelector('body');
     const content = document.getElementById('content');
@@ -25,7 +25,6 @@ const Weather = ({ defaultVille }) => {
         try {
             const response = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3&aqi=yes&lang=fr`);
             setWeatherData(response.data);
-            console.log(response.data);
         } catch (error) {
             console.error(error);
             alert("La ville n'a pas été trouvé ...");
@@ -75,6 +74,8 @@ const Weather = ({ defaultVille }) => {
             temp={weatherData.current.temp_c}
             condition={weatherData.current.condition.text}
             iconCode={weatherData.current.condition.icon}
+            index={-1}
+            tout={weatherData}
         />
 
         <div className="container">
