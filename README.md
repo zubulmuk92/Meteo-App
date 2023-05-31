@@ -2,6 +2,8 @@
 
 ## Objectif
 Faire une application web de visualisation de données météorologique simple et moderne.
+Cette application utilise une application gratuite pour la récupération des informations,
+ce qui implique une petite précision des données.
 
 ## Libraries utilisées
 - Material UI
