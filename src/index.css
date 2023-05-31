@@ -15,8 +15,6 @@
 }
 
 .content {
-  margin-top: -20px;
-  padding-top: 20px;
   height: 100vh;
 }
 
@@ -86,7 +84,7 @@ button:focus-visible {
   padding:10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -103,7 +101,7 @@ button:focus-visible {
 }
 
 .input-field input {
-  width: 80%;
+  width: 80vw;
   padding: 10px;
   border: 2px solid #ddd;
   background-color: white; /* Ajout du fond blanc */
@@ -133,4 +131,15 @@ button:focus-visible {
   transform: translateY(-20px);
   font-size: 12px;
   color: #5b5b5b;
+}
+
+/* Media queries pour les appareils mobiles */
+@media only screen and (max-width: 600px) {
+  .input-field input {
+    width: 80%;
+  }
+
+  .input-field label {
+    font-size: 10px;
+  }
 }
