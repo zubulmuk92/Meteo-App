@@ -23,4 +23,4 @@ Cette liste sera souvent modifié.
 
 ## Demo
 
-[Pas encore disponible](https://demo-meteo-app.netlify.app/)
+https://demo-meteo-app.netlify.app/
